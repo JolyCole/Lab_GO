@@ -1,0 +1,13 @@
+<!-- templates/login.html -->
+{{ define "content" }}
+<h2>Вход</h2>
+<form method="POST" action="/login">
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required/><br/><br/>
+
+    <label for="password">Пароль:</label><br/>
+    <input type="password" id="password" name="password" required/><br/><br/>
+
+    <input type="submit" value="Войти"/>
+</form>
+{{ end }}
